@@ -1,0 +1,18 @@
+{
+  "name": "bulbaball",
+  "version": "1.0.0",
+  "description": "Bulba ball community help",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files /**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yauvink/BulbaBall.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/yauvink/BulbaBall/issues"
+  },
+  "homepage": "https://github.com/yauvink/BulbaBall#readme"
+}
