@@ -30,11 +30,10 @@ fetch(url).then(function(response) {
   // const items = data.items;
   for(var i = 0; i < data.items.length; i++){
 
-    var a = document.createElement("a");
-    a.href = "https://www.google.com/";
-    a.href = "https://www.youtube.com/watch?v=" + data.items[i].id.videoId;
-    a.className = "review";
-    a.target = "_blank";
+    var link = document.createElement("a");
+    link.href = "https://www.youtube.com/watch?v=" + data.items[i].id.videoId;
+    link.className = "review";
+    link.target = "_blank";
 
     var divReview = document.createElement("div");
     divReview.className = "review"; 
@@ -43,13 +42,13 @@ fetch(url).then(function(response) {
     divReviewPreview.className = "review-preview";
     divReviewPreview.style.backgroundImage = "url('//img.youtube.com/vi/"+ data.items[i].id.videoId +"/mqdefault.jpg')";
 
-    var snippet = document.createElement("h5");
-    snippet.innerHTML = data.items[i].snippet.title;
+    var title = document.createElement("h5");
+    title.innerHTML = data.items[i].snippet.title;
 
     divReview.appendChild(divReviewPreview);
-    divReview.appendChild(snippet);
-    a.appendChild(divReview);
-    reviewsWrap.appendChild(a);
+    divReview.appendChild(title);
+    link.appendChild(divReview);
+    reviewsWrap.appendChild(link);
     
   }
   

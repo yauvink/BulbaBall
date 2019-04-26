@@ -11,7 +11,10 @@ body {
 
 
 body {
-    max-width: 1260px;
+
+}
+.container {
+    width: 1260px;
     margin: auto;
 }
 section {
@@ -23,16 +26,19 @@ a {
 a:hover {
     text-decoration: underline;
 }
-.site-button {
+input[type=button] {
     /* width: 250px; */
     border: none;
     margin: 30px;
+    font-size: 18px;
+    padding-top: 100px;
+    font-weight: bold;
     padding: 0 20px;
     border-radius: 10px;
     background-image: linear-gradient(to bottom right, red, white);
 }
 
-.site-button:hover {
+input[type=button]:hover {
     background-image: linear-gradient(to bottom right, white, red);
     cursor: pointer;
 }
@@ -67,6 +73,7 @@ header {
 }
 
 .social {
+    width: 100%;
     margin-right: 20px;
     display: flex;
     justify-content: flex-end;
@@ -261,7 +268,7 @@ a.review {
 
 
 
-/* 
+
  * {
     border: 1px solid green;
-}  */
+} 
