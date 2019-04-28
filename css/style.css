@@ -14,7 +14,7 @@ body {
 
 }
 .container {
-    width: 1260px;
+    max-width: 1260px;
     margin: auto;
 }
 section {
@@ -27,7 +27,6 @@ a:hover {
     text-decoration: underline;
 }
 input[type=button] {
-    /* width: 250px; */
     border: none;
     margin: 30px;
     font-size: 18px;
@@ -50,14 +49,12 @@ header {
     background-image: url("../img/background.jpg");
     background-position: center;
     background-size: auto 250%;
-    /* border: 2px solid black; */
     display: flex;
     align-items: flex-end;
     position: relative;
 }
 
 .logo {
-    /* border: 1px solid white; */
     border-radius: 50%;
     background-image: url("../img/logo.png");
     background-size: cover;
@@ -81,9 +78,7 @@ header {
 
 .social a {
     margin: 5px;
-    /* background-color: rgb(231, 219, 219, 0.5); */
     background-color: #fff;
-    /* border: 1px solid black; */
     border-radius: 50%;
     width: 45px;
     height: 45px;
@@ -121,15 +116,11 @@ main {
 
 /* ===  CONTENT  === */
 .content {
-    /* height: 300px; */
-    /* border: 1px solid green; */
     justify-content: center;
     text-align: center;
 }
 .money-transfer {
-    height: 300px;
-    /* background-color: rgb(224, 221, 221); */
-    
+    height: 300px;    
 }
 
 
@@ -138,15 +129,12 @@ main {
 .reviews {
     justify-content: center;
     text-align: center;
-    /* border: 1px solid black; */
-    /* background-color: rgb(224, 221, 221); */
     background-image: linear-gradient(rgb(240, 239, 239), white);
 }
 
-.reviews-wrap {
+.reviews-inner {
     display: flex;
     flex-wrap: wrap;
-    /* border: 1px solid blue; */
 }
 
 .review {
@@ -154,16 +142,11 @@ main {
     height: 200px;
     margin: auto;
     padding: 20px;
-    /* border: 1px solid black; */
-    /* background-color: rgb(204, 185, 221); */
 }
 
 .review-preview {
-    /* background-color: #fff; */
     background-position: center;
     background-size: 115% 115%;
-    /* background-size: 100% 100%; */
-
     width: 200px;
     height: 100px;
     margin: auto;
@@ -173,20 +156,14 @@ main {
     height: 110px;
 }
 a.review {
-    /* margin: 0; */
     padding: 0;
     border: none;
 }
 
  /* ===   FOOTER   === */
  footer {
-     /* height: 200px; */
      padding: 10px;
      background-image: linear-gradient(rgb(240, 239, 239), white);
-     /* display: flex;
-     justify-content: space-between; */
-    /* text-align: center; */
-    /* border: 2px solid green; */
 }
 
 .footer-wrap {
@@ -195,16 +172,13 @@ a.review {
 
 }
 .footer-social {
-    /* width: 100%; */
     display: flex;
     justify-content: flex-end;
 }
 
 .footer-social a {
     margin: 5px;
-    /* background-color: rgb(231, 219, 219, 0.5); */
     background-color: #fff;
-    /* border: 1px solid black; */
     border-radius: 50%;
     width: 45px;
     height: 45px;
@@ -217,21 +191,15 @@ a.review {
     align-self: center;
 }
 .owner {
-    /* border: 1px solid black; */
     text-align: center;
-
-
 }
 .credits {
     text-align: center;
     align-self: flex-end;
     font-size: 8px;
-    /* border: 1px solid red; */
-
 }
 .author {
     text-align: center;
-    /* border: 1px solid black; */
 }
 
 @media (max-width: 640px) {
@@ -252,23 +220,20 @@ a.review {
     }
     .footer-wrap {
         flex-direction: column;
-        
-        /* text-align: center; */
     }
     .footer-social {
-        /* position: static; */
         order: -1;
     }
-    /* .credits {
-        align-self: center;
-        order: 1;
-    } */
 }
 
 
-
-
+.testdiv {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+/* 
 
  * {
     border: 1px solid green;
-} 
+}  */
