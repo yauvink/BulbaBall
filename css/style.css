@@ -6,7 +6,7 @@ html,
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Arial', cursive;
+    /* font-family: 'Arial', cursive; */
 }
 .social-btn{
     display: block;
@@ -29,6 +29,7 @@ a {
 }
 section {
     padding-top: 30px;
+
 }
 
 input[type=button] {
@@ -129,42 +130,19 @@ main {
 
 
 /* ===   REVIEWS   === */
+
 .reviews {
+    background-image: linear-gradient(rgb(245, 244, 244), white);
     justify-content: center;
     text-align: center;
-    background-image: linear-gradient(rgb(245, 244, 244), white);
 }
-
-.reviews-inner {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.review {
-    width: 320px;
-    height: 100%;
-    margin: auto;
+.review-wrap {
     padding: 20px;
 }
-.reviewWrap {
-    height: 220px;
-    padding: 10px;
-}
-
 .review-preview {
-    width: 240px;
-
-    /* background-position: center;
-    background-size: 115% 115%;
-    width: 240px;
-    height: 120px;
-    margin: auto; */
+    width: 100%;
 }
 
-a.review {
-    padding: 0;
-    border: none;
-}
 
  /* ===   FOOTER   === */
  footer {
@@ -234,6 +212,6 @@ a.review {
 
 
 
- * {
+ /* * {
     border: 1px solid green;
-} 
+}  */
