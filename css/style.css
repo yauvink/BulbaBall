@@ -8,8 +8,18 @@ body {
     padding: 0px;
     font-family: 'Arial', cursive;
 }
-
-
+.social-btn{
+    display: block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+#sample3{
+    height: 100px;
+}
 a {
     text-decoration: none;
 }
@@ -113,7 +123,7 @@ main {
     text-align: center;
 }
 .money-transfer {
-    height: 300px;    
+   
 }
 
 
@@ -224,6 +234,6 @@ a.review {
 
 
 
- /* * {
+ * {
     border: 1px solid green;
-}  */
+} 

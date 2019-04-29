@@ -10,28 +10,25 @@ fetch(url).then(function (response) {
   for (let i = 0; i < data.items.length; i++) {
 
     // создаем ссылку-обертку
-    let link = $("<a>").toggleClass("review").attr({
-      href: "https://www.youtube.com/watch?v=" + data.items[i].id.videoId,
+    let link = $("<a>").addClass("review").attr({
+      href: `https://www.youtube.com/watch?v=${data.items[i].id.videoId}`,
       target: "_blank"
     });
 
     // создаем див-обертку
-    let review = $("<div>").toggleClass("reviewWrap");
+    let review = $("<div>").addClass("reviewWrap");
 
     // создаем превью
-    // let reviewPreview = $("<img>").toggleClass("review-preview").css({
-    //   backgroundImage: "url('//img.youtube.com/vi/" + data.items[i].id.videoId + "/mqdefault.jpg')"
-    // });
-    let reviewPreview = $("<img>").toggleClass("review-preview").attr({
-      src: "//img.youtube.com/vi/" + data.items[i].id.videoId + "/mqdefault.jpg"
+    let reviewPreview = $("<img>").addClass("review-preview").attr({
+      src: `//img.youtube.com/vi/${data.items[i].id.videoId}/mqdefault.jpg`
     });
     
     // создаем тайтл
     let reviewTitle = $("<h5>").html(data.items[i].snippet.title);
 
     // собираем в ссылку
-    $(review).append(reviewPreview).append(reviewTitle);
-    $(link).append(review);
+    review.append(reviewPreview).append(reviewTitle);
+    link.append(review);
     // добавляем на страницу
     $(".reviews-inner").append(link);
 

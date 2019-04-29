@@ -11,6 +11,12 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
     <link rel="shortcut icon" href="../img/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+
 </head>
 
 <body>
@@ -24,7 +30,7 @@
                     <a href="https://www.youtube.com/channel/UCnRisinlQ3FiupZH8B_TJiw" class="social-icon"
                         target="_blank">
                         <i class="fab fa-youtube"></i>
-                     </a>
+                    </a>
                     <a href="https://vk.com/bulbaball" class="social-icon" target="_blank">
                         <i class="fab fa-vk"></i>
                     </a>
@@ -46,16 +52,42 @@
 
         <main>
             <section class="content">
-                <h1>[ Поддержать проект ]</h1>
+                    <a href="#"  class="social-btn social-btn__twitter"></a>
+
+                <h2>[ Поддержать проект ]</h2>
                 <div class="money-transfer">
                     <h3>
                         Блок перевода денег
                     </h3>
+                    <!-- Simple Textfield -->
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="sample1">
+                            <label class="mdl-textfield__label" for="sample1">Name...</label>
+                        </div>
+                    </form>
+                    <!-- Numeric Textfield -->
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+                            <label class="mdl-textfield__label" for="sample2">Email...</label>
+                            <span class="mdl-textfield__error">Input is not a number!</span>
+                        </div>
+                    </form>
+                    <!-- action form -->
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded">
+                            <input class="mdl-textfield__input" type="text" id="sample3">
+                            <label class="mdl-textfield__label" for="sample2">Letter...</label>
+                        </div>
+                    </form>
                 </div>
-                <a href="#">
 
-                    <input type="button" value="Перейти куда-нибудь >>">
-
+                <a>
+                    <!-- <input type="button" value="Перейти куда-нибудь >>"> -->
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                        Перейти куда-нибудь >>
+                    </button>
                 </a>
             </section>
             <section class="reviews">
@@ -78,25 +110,25 @@
                         Личный сайт Евгения Bulba-ball Рудого
                     </h4>
                 </div>
-            
+
                 <div class="footer-social">
-                        <a href="https://www.youtube.com/channel/UCnRisinlQ3FiupZH8B_TJiw" class="social-icon"
-                            target="_blank">
-                            <i class="fab fa-youtube"></i>
-                         </a>
-                        <a href="https://vk.com/bulbaball" class="social-icon" target="_blank">
-                            <i class="fab fa-vk"></i>
-                        </a>
-                        <a href="https://goo.gl/qtcRzJ" class="social-icon" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://goo.gl/uoeJWc" class="social-icon" target="_blank">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.instagram.com/bulbaball/" class="social-icon" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
+                    <a href="https://www.youtube.com/channel/UCnRisinlQ3FiupZH8B_TJiw" class="social-icon"
+                        target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://vk.com/bulbaball" class="social-icon" target="_blank">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="https://goo.gl/qtcRzJ" class="social-icon" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://goo.gl/uoeJWc" class="social-icon" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/bulbaball/" class="social-icon" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
                 <div class="author">
                     <h4>
                         Made by Boozzy 2019 &copy;
