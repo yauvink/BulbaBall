@@ -17,7 +17,7 @@ body {
     height: 24px;
     cursor: pointer;
 }
-#sample3{
+.fieldheight{
     height: 100px;
 }
 a {
@@ -29,26 +29,19 @@ a {
 }
 section {
     padding-top: 30px;
+    padding-bottom: 30px;
 
 }
 
-input[type=button] {
-    border: none;
-    margin: 30px;
-    font-size: 18px;
-    padding-top: 100px;
-    font-weight: bold;
-    padding: 0 20px;
-    border-radius: 10px;
-    background-image: linear-gradient(to bottom right, red, white);
+
+ /* === ALErt Message === */
+
+.alertMessage {
+    margin: auto;
+    background-color: red;
 }
 
-input[type=button]:hover {
-    background-image: linear-gradient(to bottom right, white, red);
-    cursor: pointer;
-}
-
-/* ===   HEADER   === */
+ /* ===   HEADER   === */
 
 header {
     height: 270px;
@@ -112,9 +105,7 @@ header {
 
 
 /* ===   MAIN   === */
-main {
-    /* border: 2px solid red; */
-}
+
 
 
 /* ===  CONTENT  === */
@@ -123,21 +114,21 @@ main {
     justify-content: center;
     text-align: center;
 }
-.money-transfer {
-   
-}
+
 
 
 
 /* ===   REVIEWS   === */
-
+a.review:hover{
+    text-decoration: underline;
+}
 .reviews {
     background-image: linear-gradient(rgb(245, 244, 244), white);
     justify-content: center;
     text-align: center;
 }
 .review-wrap {
-    padding: 20px;
+    padding: 10px;
 }
 .review-preview {
     width: 100%;
